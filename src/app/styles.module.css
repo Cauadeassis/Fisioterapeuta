@@ -1,0 +1,146 @@
+.body {
+  & p {
+    margin-bottom: 15px;
+  }
+
+  & header nav {
+    background-color: var(--blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+    &>div {
+      margin-right: 10%;
+      color: var(--light);
+      background: radial-gradient(circle, rgba(63, 251, 238, 1) 0%, var(--gradient-blue) 100%);
+      padding: 0.5rem;
+      border: solid 1px var(--light);
+      border-radius: 10px;
+    }
+
+    &>a {
+      color: var(--light);
+      padding: 1%;
+      text-decoration: none;
+      cursor: pointer;
+      transition: 0.5s;
+
+      &:hover {
+        padding: 2%;
+        border: 1px solid var(--light);
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.2);
+        box-shadow: var(--shadow-soft);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+      }
+    }
+  }
+
+  .gradientSection,
+  .feedbackSection {
+    background: var(--light-blue);
+    background: var(--gradient-accent);
+    text-align: center;
+    padding: 20%;
+    color: var(--light);
+    border-bottom: var(--dark) solid 3px;
+  }
+
+  .gradientSection {
+    & b {
+      font-size: 50px;
+      color: var(--dark);
+    }
+
+    &>a {
+      display: inline-block;
+      transition: 0.5s;
+      color: var(--light);
+      margin-top: 10px;
+      padding: 10px;
+      text-decoration: none;
+      background-color: var(--dark);
+      border-radius: 1rem;
+      box-shadow: 0 0 1rem rgba(255, 255, 255, 0.753);
+      animation: pulse 1.5s infinite alternate;
+
+      &:hover {
+        padding: 1rem;
+      }
+    }
+  }
+
+  .pictureSection {
+    color: var(--light-blue);
+    padding: 3%;
+    padding-top: 8%;
+
+    &>h2 {
+      border-bottom: solid var(--light-blue);
+      margin: 10px;
+    }
+
+    .imageContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      & .image {
+        width: 70%;
+        padding: 2%;
+      }
+    }
+  }
+
+  .feedbackSection {
+    border-top: var(--dark) solid 3px;
+
+    & .cardsContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &>div {
+        width: 25%;
+        padding: 2%;
+        margin: 1%;
+        transition: 0.3s;
+        background: rgba(255, 255, 255, 0.29);
+        border-radius: 1rem;
+        box-shadow: var(--shadow-soft);
+        backdrop-filter: blur(0.5rem);
+        -webkit-backdrop-filter: blur(0.5rem);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+
+        &:hover {
+          padding: 3%;
+        }
+      }
+    }
+  }
+
+  .mapsSection {
+    background-color: var(--dark);
+    padding: 5%;
+
+    &>h2 {
+      color: var(--light);
+      text-align: center;
+      padding-bottom: 3%;
+    }
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    filter: brightness(100%);
+  }
+
+  100% {
+    transform: scale(1.1);
+    filter: brightness(150%);
+  }
+}

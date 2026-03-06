@@ -1,0 +1,150 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    background-color: rgb(0, 96, 206);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+#logo{
+    margin-right: 10%;
+    color: aliceblue;
+    background: #3ffbee;
+    background: radial-gradient(circle, rgba(63, 251, 238, 1) 0%, rgba(70, 155, 252, 1) 100%);
+    padding: 8px;
+    border: solid 1px aliceblue;
+    border-radius: 10px;
+}
+
+nav > a{
+    color: aliceblue;
+    padding: 1%;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+nav > a:hover{
+    border: 1px solid aliceblue;
+    border-radius: 10px;
+    padding: 2%;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.gradient{
+    background: #279df2;
+    background: radial-gradient(circle, rgba(39, 157, 242, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    text-align: center;
+    padding: 20%;
+    color: aliceblue;
+    border-bottom: #194e74 solid 3px;
+}
+
+b{
+    font-size: 50px;
+    color: #194e74;
+}
+
+p{
+    margin-bottom: 15px;
+}
+
+#cnc{
+    transition: 0.5s;
+    color: aliceblue;
+    margin-top: 10px;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #194e74;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.753);
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); filter: brightness(100%); }
+    100% { transform: scale(1.1); filter: brightness(150%); }
+  }
+  #cnc { animation: pulse 1.5s infinite alternate; }
+  
+#cnc:hover{
+    padding: 15px;
+}
+
+#picture{
+    color: #279df2;
+    padding: 3%;
+    padding-top: 8%;
+}
+
+.ft{
+    color: #279df2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    width: 70%;
+    padding: 2%;
+}
+
+#picture > h2{
+    border-bottom: solid #279df2;
+    margin: 10px;
+}
+
+.feedback{
+    background: #279df2;
+    background: radial-gradient(circle, rgba(39, 157, 242, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    text-align: center;
+    padding: 20%;
+    color: aliceblue;
+    border-bottom: #194e74 solid 3px;
+    border-top: solid 3px #194e74;
+}
+
+#cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 25%;
+    padding: 2%;
+    margin: 1%;
+    transition: 0.3s;
+    background: rgba(255, 255, 255, 0.29);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.card:hover{
+    padding: 3%;
+}
+
+.maps{
+    background-color: #194e74;
+    padding: 5%;
+}
+
+.maps > h2{
+    color: aliceblue;
+    text-align: center;
+    padding-bottom: 3%;
+}
