@@ -8,7 +8,11 @@
   --color-gradient-teal: rgba(63, 251, 238, 1);
   --gradient-blue: radial-gradient(circle, var(--light-blue) 0%, white 100%);
   --shadow-soft: 0 4px 2rem rgba(0, 0, 0, 0.1);
-  --gradient-accent: radial-gradient(circle, var(--gradient-blue) 0%, var(--light) 100%);
+  --gradient-accent: radial-gradient(
+    circle,
+    var(--gradient-blue) 0%,
+    var(--light) 100%
+  );
 }
 
 * {
